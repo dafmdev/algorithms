@@ -1,5 +1,3 @@
-use std::cmp::{PartialEq, PartialOrd};
-
 pub mod search {
     pub fn binary_search<T: PartialEq + PartialOrd>(lst: Vec<T>, item: T) -> Option<usize> {
         let mut low = 0;
