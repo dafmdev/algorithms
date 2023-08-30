@@ -1,4 +1,4 @@
-pub fn binary_search<T: PartialEq + PartialOrd>(lst: Vec<T>, item: T) -> Option<usize> {
+pub fn binary_search<T: PartialOrd>(lst: Vec<T>, item: T) -> Option<usize> {
     let mut low = 0;
     let mut high = lst.len() - 1;
 
