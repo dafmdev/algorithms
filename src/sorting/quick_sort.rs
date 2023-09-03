@@ -27,4 +27,18 @@ mod tests {
 
         assert_eq!(vec![1], recursive_quick_sort(lst));
     }
+
+    #[test]
+    fn pre_sorted() {
+        let lst = vec![1, 2, 3, 4];
+
+        assert_eq!(vec![1, 2, 3, 4], recursive_quick_sort(lst));
+    }
+
+    #[test]
+    fn reverse_sorted() {
+        let lst = vec![4, 3, 2, 1];
+
+        assert_eq!(vec![1, 2, 3, 4], recursive_quick_sort(lst));
+    }
 }
