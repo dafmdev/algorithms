@@ -16,9 +16,15 @@ mod tests {
 
     #[test]
     fn basic() {
-        let res = vec![10, 8, 4, 3, 1, 9, 2, 7, 5, 6];
-        let sorted = recursive_quick_sort(res);
+        let lst = vec![10, 8, 4, 3, 1, 9, 2, 7, 5, 6];
 
-        assert_eq!(vec![1, 2, 3, 4, 5, 6, 7, 8, 9, 10], sorted);
+        assert_eq!(vec![1, 2, 3, 4, 5, 6, 7, 8, 9, 10], recursive_quick_sort(lst));
+    }
+
+    #[test]
+    fn one_element() {
+        let lst = vec![1];
+
+        assert_eq!(vec![1], recursive_quick_sort(lst));
     }
 }
